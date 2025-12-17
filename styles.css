@@ -1,0 +1,715 @@
+
+/* --------CABECERA (HEADER) Y NAVEGACIÓN------------ */
+/* Barra superior, menú de navegación, logo y enlaces del menú */
+
+header {
+    flex-direction: row;
+    background-color: #334455; 
+    color: white;
+    padding: 0 30px; 
+    height: 80px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.ado-header {
+    background-color: #0d112b; 
+    color: #00aaff;           
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid #0a0e24; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.logo-img {
+    height: 40px; 
+    width: auto;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+nav {
+    background-color: transparent; 
+    border: none; 
+    font-family: 'Poppins', sans-serif; 
+    line-height: normal; 
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 20px auto 10px auto; 
+    padding-left: 10px; 
+}
+
+nav .nav-rose {
+    width: 40px; 
+    height: auto;
+    filter: drop-shadow(0 0 5px #00aaff); 
+}
+
+nav a {
+    text-decoration: none;
+    color: #00aaff;  
+    font-weight: bold; 
+    font-size: 18px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+}
+/* -------------------------- */
+
+/* --------CONFIGURACIÓN GENERAL Y LAYOUT BASE------------ */
+/* Estilos base del cuerpo, fondo, y estructura de los contenedores principales (main, article, section) */
+body {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://networksites.livenationinternational.com/networksites/j4yovidi/ado_artistimage_mid.png?format=webp&width=3840&quality=75');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgb(14, 84, 175); 
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;    
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 20px auto;      
+    gap: 0;                
+}
+
+article {
+    height: 950px;
+    padding: 10px;
+    height: auto;     
+    min-height: 950px;
+}
+
+section {
+    border: 1px solid black;
+    background-color: rgb(2, 89, 110);
+    color: rgb(255, 255, 255);
+    font-family: 'Courier new', courier, monospace;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.6;
+    flex: 1;           
+    min-width: 0;      
+    padding: 40px;
+    margin: 0;
+    box-sizing: border-box; 
+    overflow-wrap: break-word;  
+    word-wrap: break-word;      
+    word-break: break-word;
+}
+/* -------------------------- */
+
+
+/* --------BARRA LATERAL (ASIDE) Y BOTONES------------ */
+/* Estilos para la barra lateral y la botonera de imágenes contenida en ella */
+
+aside {
+    height: auto; 
+    width: 20%;
+    background-color: #0d112b;
+    border: 2px solid #00aaff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+}
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1; 
+    gap: 5px; 
+    margin-bottom: 5px;
+}
+
+.btn {
+    flex: 1;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 5px 0; 
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.btn:last-child {
+    border-bottom: none;
+}
+
+.btn img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover img {
+    transform: scale(1.05);
+}
+/* -------------------------- */
+
+
+/* --------TIPOGRAFÍA Y CONTENIDO GENERAL------------ */
+/* Títulos h3, párrafos, enlaces dentro del contenido e imágenes generales */
+
+aside h3 {
+    font-family: "Poppins", sans-serif;  
+    font-size: 32px;                      
+    font-weight: 900;                     
+    color: rgb(246, 246, 246);
+    transform: skewX(-15deg);             
+    letter-spacing: 2px;                  
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section h3 {
+    font-family: "Poppins", sans-serif;  
+    font-size: 32px;                      
+    font-weight: 900;                     
+    color: rgb(14, 14, 14);           
+    letter-spacing: 2px;                  
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section a {
+    color: #66ccff; 
+    text-decoration: underline; 
+    font-weight: bold; 
+}
+
+section a:hover {
+    color: #000000; 
+    cursor: pointer;
+}
+
+section p {
+    margin-bottom: 25px; 
+    text-indent: 20px;  
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+/* -------------------------- */
+
+
+/* --------COMPONENTES: VIDEO Y REDES SOCIALES------------ */
+/* Contenedor del reproductor de video y botones circulares de redes sociales */
+
+.video-container {
+    width: 100%;
+    max-width: 900px;      
+    margin: 30px auto;     
+    padding: 0 15px;      
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;     
+    border-radius: 6px;
+}
+
+section video {
+    max-width: 100%; 
+    height: auto;     
+    display: block;   
+    margin: 20px auto; 
+}
+
+.social-icons {
+    display: flex;          
+    flex-direction: row;    
+    gap: 15px;             
+    margin-top: 10px;       
+}
+
+.social-btn {
+    width: 40px;           
+    height: 40px;          
+    min-width: 40px;       
+    background-color: #00aaff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;  
+}
+
+.social-btn img {
+    width: 20px !important;  
+    height: 20px !important; 
+    object-fit: contain;  
+    display: block;  
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);  
+}
+/* -------------------------- */
+
+
+/* --------TABLAS------------ */
+/* Estilos para la tabla de datos, incluyendo bordes y colores de cebra */
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ado-table {
+    width: 100%;
+    border-collapse: collapse; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.ado-table thead tr {
+    background-color: #0d112b; 
+    color: #00aaff;           
+    text-align: center;
+    font-weight: bold;
+}
+
+.ado-table th, 
+.ado-table td {
+    padding: 12px 15px;
+    border: 1px solid #00aaff; 
+}
+
+.ado-table tbody tr {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-bottom: 1px solid #00aaff;
+    transition: background-color 0.3s ease;
+}
+
+.ado-table td {
+    text-align: center;
+    color: white;
+}
+/* -------------------------- */
+
+
+/* --------NEWSLETTER Y FORMULARIOS------------ */
+/* Tarjeta de suscripción, campos de texto (inputs) y botones de envío */
+
+.newsletter-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    
+    background-color: #0d112b;
+    border: 2px solid #00aaff;
+    border-radius: 10px;
+    padding: 60px 50px;
+    box-shadow: 0 0 30px rgba(0, 170, 255, 0.2);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+}
+
+.news-title {
+    color: #00aaff;
+    font-size: 36px; 
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.news-desc {
+    color: #b0c4de;
+    font-size: 16px; 
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 25px; 
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00aaff;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #334455;
+    padding: 18px; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.4);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    margin-bottom: 35px;
+    color: #ccc;
+    text-align: left;
+    justify-content: center; 
+}
+
+.checkbox-group input {
+    accent-color: #00aaff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.news-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #00aaff;
+    color: #0d112b;
+    border: none;
+    font-weight: 900;
+    font-size: 18px; 
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.news-btn:hover {
+    background-color: white;
+    color: #00aaff;
+    box-shadow: 0 0 20px white;
+    transform: scale(1.02); 
+}
+/* -------------------------- */
+
+
+/* --------SECCIÓN FAQ (PREGUNTAS FRECUENTES)------------ */
+/* Lista de preguntas frecuentes y sus estilos de interacción */
+
+.faq-title {
+    text-align: center;
+    color: #00aaff;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.faq-inside-container {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid rgba(0, 170, 255, 0.3); 
+    padding-top: 40px;
+}
+
+.faq-list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-left: 3px solid #00aaff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.faq-list li:hover {
+    transform: translateX(10px);
+    background-color: rgba(13, 17, 43, 0.95);
+}
+
+.faq-question {
+    color: white;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.faq-answer {
+    color: #b0c4de;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+    margin-left: 28px;
+    line-height: 1.5;
+}
+/* -------------------------- */
+
+
+/* --------FOOTER (PIE DE PÁGINA)------------ */
+/* Estructura del footer, columnas de enlaces y logotipos inferiores */
+
+footer {
+    background-color: #030613; 
+    width: 100%;
+    position: relative; 
+    z-index: 10;       
+    border-top: 3px solid #00aaff;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 40px;
+}
+
+.footer-left {
+    flex: 1; 
+    min-width: 250px;
+}
+
+.footer-logo {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.social-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8899a6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    flex: 2; 
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
+    min-width: 300px;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+}
+
+.link-column h4 {
+    color: #8899a6; 
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.link-column a:hover {
+    color: #00aaff; 
+    text-decoration: underline;
+}
+/* -------------------------- */
+
+
+/* --------DISEÑO RESPONSIVO (MOBILE)------------ */
+/* Ajustes para pantallas pequeñas (móviles y tablets hasta 768px) */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;            
+        gap: 20px;            
+        margin: 10px auto;
+    }
+
+    section {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 20px; 
+        
+        height: auto !important; 
+        flex: none; 
+    }
+
+    aside {
+        width: 100%;        
+        height: auto;       
+        min-height: 0;        
+        
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;      
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+    .newsletter-section {
+        width: 100%;
+        flex: none;
+    }
+}
+/* -------------------------- */
+
+/* -------- ESTILOS DE LA SECCIÓN DE PERSONAJES ------------ */
+/* El contenedor que pone las fotos en fila */
+.galeria-personajes {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;          
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+
+.tarjeta-personaje {
+    flex: 1 1 200px;      
+    max-width: 220px;    
+    
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;   
+    border: 1px solid #00aaff; 
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-personaje:hover {
+    transform: translateY(-5px); 
+    background-color: rgba(13, 17, 43, 0.6);
+}
+
+.tarjeta-personaje img {
+    width: 100%;           
+    height: 200px;       
+    object-fit: contain;  
+    border-radius: 4px;    
+    background-color: transparent; 
+    margin-bottom: 10px;
+}
+
+.tarjeta-personaje h4 {
+    margin: 10px 0 5px 0;
+    color: #00aaff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.tarjeta-personaje p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #e0e0e0;
+    margin: 0;
+    text-indent: 0; 
+}
+/* -------------------------- */
